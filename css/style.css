@@ -80,3 +80,38 @@ a{
 .main-article__preorder-btn > span{
   font-weight: 700;
 }
+
+/* Keyboard description */
+.product-description-bg{
+  background-image: url("../assets/shared/pattern-square.svg");
+  background-repeat: no-repeat;
+  background-position: -127.5px 100%;
+}
+.product-description__container{
+  max-width: 1110px;
+  margin: 0 auto 168px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+}
+
+.product-description__heros{
+  display: flex;
+  gap:30px;
+ 
+}
+
+.product-description__keyboard-text{
+  justify-self: end;
+  max-width: 255px;
+}
+
+.product-description__keyboard-text h2{
+ margin-bottom: 27px;
+}
+
+
+/* .product-description__keyboard-text p{
+  max-width: 29ch;
+  margin-top: 27px;
+} */
