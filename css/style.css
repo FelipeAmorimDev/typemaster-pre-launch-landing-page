@@ -1,0 +1,43 @@
+/* Componentes */
+@import url('./componentes/tipografias.css');
+@import url('./componentes/cores.css');
+@import url('./componentes/componentes.css');
+
+/* Gerais */
+
+body{
+  margin: 0;
+}
+
+h1,h2,h3,p{
+  margin: 0px;
+}
+
+ul,li{
+  margin: 0px;
+  padding: 0px;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-container{
+  max-width: 1110px;
+  margin: 55px auto 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
