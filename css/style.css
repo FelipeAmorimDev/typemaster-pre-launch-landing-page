@@ -46,3 +46,37 @@ a{
   justify-content: space-between;
   align-items: center;
 }
+
+/* main article */
+.main-article-bg{
+  background-image: url("../assets/shared/pattern-square.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 127.5px) 0px;
+}
+
+.main-article__container{
+  max-width: 1110px;
+  margin: 0px auto 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.main-article__description{
+  justify-self: start;
+}
+
+.main-article__description p {
+  max-width: 53ch;
+  margin: 24px 0px 40px;
+}
+
+.main-article__preorder-btn{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-article__preorder-btn > span{
+  font-weight: 700;
+}

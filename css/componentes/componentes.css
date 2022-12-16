@@ -4,6 +4,7 @@
   font-weight: 700;
   border-radius: 8px;
   background-color: var(--cor-p1);
+  transition: all .3s;
 }
 
 .btn-1:hover{
@@ -16,9 +17,10 @@
   font-weight: 700;
   border-radius: 8px;
   background-color: var(--cor-0);
+  transition: all .3s;
 }
 
 .btn-2:hover{
-  background-color: var(cor-p3);
-  color: var(cor-1);
+  background-color: var(--cor-p3);
+  color: var(--cor-1);
 }
