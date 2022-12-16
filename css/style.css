@@ -25,6 +25,11 @@ ul{
 img{
   max-width: 100%;
   display: block;
+  
+}
+
+main img{
+  border-radius: 20px;
 }
 
 a{
