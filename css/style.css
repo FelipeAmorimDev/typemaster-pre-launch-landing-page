@@ -57,7 +57,7 @@ a{
 }
 
 .main-article__container{
-  padding: 0 20px;
+  padding: 0 0 0 20px;
   max-width: 1110px;
   margin: 0px auto 30px;
   display: grid;
@@ -81,6 +81,12 @@ a{
   gap: 40px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.main-article__hero img{
+    height: 425px;
+  object-fit: cover;
+  object-position: left;
 }
 @media (max-width:1200px){
   .main-article-bg{
@@ -110,6 +116,15 @@ a{
   gap:30px;
  }
 
+ .product-description__heros picture:first-child{
+  flex: 1;
+  
+}
+
+ .product-description__heros picture:first-child{
+  flex: 0 0 255px;
+  }
+
 .product-description__keyboard-text{
   justify-self: end;
   max-width: 255px;
@@ -123,11 +138,40 @@ a{
   .product-description-bg{
     background: initial;
   }
+  .product-description__heros picture img{
+    height: 480px;
+    object-fit: cover;
+    object-position: left;
+  }
+ 
+}
 
+@media (max-width:770px){
   .product-description__container{
     grid-template-columns: 1fr;
     margin-bottom: 142px;
+    
   }
+  
+  .product-description__heros{
+    height: 320px;
+   
+  }
+
+  .product-description__heros picture img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-description__heros picture:first-child {
+    flex-basis: 214px;
+  }
+
+
+  .product-description__heros picture:last-child {
+    flex: 1;
+  }
+ 
 
   .product-description__keyboard-text{
     justify-self: initial;
@@ -135,10 +179,17 @@ a{
     display: flex;
     align-items: center;
     margin-top: 72px;
+    justify-content: space-between;
+    gap: 46px;
   }
 
   .product-description__keyboard-text h2{
     margin-bottom: initial;
+    max-width: 10ch;
+   }
+
+   .product-description__keyboard-text p{
+    max-width: 46ch;
    }
 }
 
@@ -157,13 +208,18 @@ a{
 
 .benefits__list{
   display: flex;
-  gap: 30px;
+  gap: 72px 30px;
   align-items: flex-end;
   flex-wrap: wrap;
+  
 }
 
 .benefits__item{
   flex: 1 1 255px;
+}
+
+li.benefits__item:last-child p{
+  max-width: 40ch;
 }
 
 .benefits__icon {
