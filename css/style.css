@@ -68,14 +68,12 @@ a {
   gap: 16px;
   grid-template-columns: minmax(346px, 1fr) auto;
   align-items: center;
-}
 
-.main-article__description {
-  justify-self: start;
+  
 }
 
 .main-article__description p {
-  max-width: 53ch;
+  max-width: 45ch;
   margin: 24px 0px 40px;
 }
 
