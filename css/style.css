@@ -7,6 +7,7 @@
 
 body{
   margin: 0;
+  
 }
 
 h1,h2,h3,p{
@@ -41,6 +42,7 @@ a{
 
 .header-container{
   max-width: 1110px;
+  padding: 0 20px;
   margin: 55px auto 83px;
   display: flex;
   justify-content: space-between;
@@ -55,10 +57,12 @@ a{
 }
 
 .main-article__container{
+  padding: 0 20px;
   max-width: 1110px;
   margin: 0px auto 30px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  gap: 16px;
+  grid-template-columns: minmax(346px,1fr) auto;
   align-items: center;
 }
 
@@ -75,10 +79,13 @@ a{
   display: flex;
   align-items: center;
   gap: 40px;
-}
-
-.main-article__preorder-btn > span{
+  text-transform: uppercase;
   font-weight: 700;
+}
+@media (max-width:1200px){
+  .main-article-bg{
+    background: initial;
+  }
 }
 
 /* Keyboard description */
@@ -87,11 +94,14 @@ a{
   background-repeat: no-repeat;
   background-position: -127.5px 100%;
 }
+
 .product-description__container{
+  padding: 0 20px;
   max-width: 1110px;
   margin: 0 auto 168px;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  gap: 16px;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
@@ -109,6 +119,28 @@ a{
  margin-bottom: 27px;
 }
 
+@media (max-width:1200px){
+  .product-description-bg{
+    background: initial;
+  }
+
+  .product-description__container{
+    grid-template-columns: 1fr;
+    margin-bottom: 142px;
+  }
+
+  .product-description__keyboard-text{
+    justify-self: initial;
+    max-width: initial;
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+  }
+
+  .product-description__keyboard-text h2{
+    margin-bottom: initial;
+   }
+}
 
 /* .product-description__keyboard-text p{
   max-width: 29ch;
@@ -118,6 +150,7 @@ a{
 /* Benefits Section */
 
 .benefits__container{
+  padding: 0 20px;
   max-width: 1110px;
   margin: 0 auto 128px;
 }
@@ -133,6 +166,16 @@ a{
   flex: 1 1 255px;
 }
 
+.benefits__icon {
+  width: 65px;
+  height: 65px;
+  background-color: var(--cor-p1);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefits__item h3{
   max-width: 14ch;
   margin-top: 48px;
@@ -144,9 +187,12 @@ a{
  }
 
  footer{
+  padding: 0 20px;
   margin-bottom: 39px;
- }
- footer p{
   text-align: center;
   font-weight: 700;
+ }
+
+ footer p > span{
+  font-weight: 500;
  }

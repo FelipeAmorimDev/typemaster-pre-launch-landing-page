@@ -29,4 +29,10 @@
   font-weight: 500;
   
 }
+
+@media (max-width:870px){
+  .font-1-xxl{
+    font-size: 3rem;
+  }
+}
   
