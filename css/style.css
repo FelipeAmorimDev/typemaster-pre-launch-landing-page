@@ -5,42 +5,46 @@
 
 /* Gerais */
 
-body{
+body {
   margin: 0;
-  
+
 }
 
-h1,h2,h3,p{
+h1,
+h2,
+h3,
+p {
   margin: 0px;
 }
 
-ul,li{
+ul,
+li {
   margin: 0px;
   padding: 0px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
-  
+
 }
 
-main img:not(.benefits__item img){
+main img:not(.benefits__item img) {
   border-radius: 20px;
 }
 
-a{
+a {
   display: inline-block;
   text-decoration: none;
 }
 
 /* Header */
 
-.header-container{
+.header-container {
   max-width: 1110px;
   padding: 0 20px;
   margin: 55px auto 83px;
@@ -50,23 +54,23 @@ a{
 }
 
 /* main article */
-.main-article-bg{
+.main-article-bg {
   background-image: url("../assets/shared/pattern-square.svg");
   background-repeat: no-repeat;
   background-position: calc(100% + 127.5px) 0px;
 }
 
-.main-article__container{
+.main-article__container {
   padding: 0 0 0 20px;
   max-width: 1110px;
   margin: 0px auto 30px;
   display: grid;
   gap: 16px;
-  grid-template-columns: minmax(346px,1fr) auto;
+  grid-template-columns: minmax(346px, 1fr) auto;
   align-items: center;
 }
 
-.main-article__description{
+.main-article__description {
   justify-self: start;
 }
 
@@ -75,7 +79,7 @@ a{
   margin: 24px 0px 40px;
 }
 
-.main-article__preorder-btn{
+.main-article__preorder-btn {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -83,25 +87,50 @@ a{
   font-weight: 700;
 }
 
-.main-article__hero img{
-    height: 425px;
+.main-article__hero img {
+  height: 425px;
   object-fit: cover;
   object-position: left;
 }
-@media (max-width:1200px){
-  .main-article-bg{
+
+@media (max-width:1200px) {
+  .main-article-bg {
     background: initial;
   }
 }
 
+@media (max-width:600px) {
+  .main-article-bg {
+    background: initial;
+  }
+
+  .main-article__container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-article__hero img {
+    height: 321px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .main-article__description {
+    max-width: 340px;
+  }
+  .product-description__keyboard-text p {
+    margin: 0 auto;
+  }
+}
+
 /* Keyboard description */
-.product-description-bg{
+.product-description-bg {
   background-image: url("../assets/shared/pattern-square.svg");
   background-repeat: no-repeat;
   background-position: -127.5px 100%;
 }
 
-.product-description__container{
+.product-description__container {
   padding: 0 20px;
   max-width: 1110px;
   margin: 0 auto 168px;
@@ -111,54 +140,54 @@ a{
   align-items: center;
 }
 
-.product-description__heros{
+.product-description__heros {
   display: flex;
-  gap:30px;
- }
-
- .product-description__heros picture:first-child{
-  flex: 1;
-  
+  gap: 30px;
 }
 
- .product-description__heros picture:first-child{
-  flex: 0 0 255px;
-  }
+.product-description__heros picture:first-child {
+  flex: 1;
 
-.product-description__keyboard-text{
+}
+
+.product-description__heros picture:first-child {
+  flex: 0 0 255px;
+}
+
+.product-description__keyboard-text {
   justify-self: end;
   max-width: 255px;
 }
 
-.product-description__keyboard-text h2{
- margin-bottom: 27px;
+.product-description__keyboard-text h2 {
+  margin-bottom: 27px;
 }
 
-@media (max-width:1200px){
-  .product-description-bg{
+@media (max-width:1200px) {
+  .product-description-bg {
     background: initial;
   }
-  .product-description__heros picture img{
+
+  .product-description__heros picture img {
     height: 480px;
     object-fit: cover;
     object-position: left;
   }
- 
+
 }
 
-@media (max-width:770px){
-  .product-description__container{
+@media (max-width:770px) {
+  .product-description__container {
     grid-template-columns: 1fr;
     margin-bottom: 142px;
-    
-  }
-  
-  .product-description__heros{
-    height: 320px;
-   
+
   }
 
-  .product-description__heros picture img{
+  .product-description__heros {
+    height: 320px;
+  }
+
+  .product-description__heros picture img {
     height: 100%;
     width: 100%;
   }
@@ -171,9 +200,9 @@ a{
   .product-description__heros picture:last-child {
     flex: 1;
   }
- 
 
-  .product-description__keyboard-text{
+
+  .product-description__keyboard-text {
     justify-self: initial;
     max-width: initial;
     display: flex;
@@ -183,14 +212,47 @@ a{
     gap: 46px;
   }
 
-  .product-description__keyboard-text h2{
+  .product-description__keyboard-text h2 {
     margin-bottom: initial;
     max-width: 10ch;
-   }
+  }
 
-   .product-description__keyboard-text p{
+  .product-description__keyboard-text p {
     max-width: 46ch;
-   }
+  }
+}
+
+@media (max-width:600px) {
+  .product-description__container {
+    padding-left: 0px;
+    margin-bottom: 111px;
+  }
+
+  .product-description__heros {
+    height: 193px;
+    gap: 24px;
+    margin-left: -20px;
+  }
+
+  .product-description__heros picture:first-child {
+    flex-basis: initial;
+
+  }
+
+
+  .product-description__heros picture:last-child {
+    flex: 1;
+  }
+
+  .product-description__keyboard-text {
+    display: block;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .product-description__keyboard-text h2 {
+    margin: 0 auto 24px;
+  }
 }
 
 /* .product-description__keyboard-text p{
@@ -200,25 +262,25 @@ a{
 
 /* Benefits Section */
 
-.benefits__container{
+.benefits__container {
   padding: 0 20px;
   max-width: 1110px;
   margin: 0 auto 128px;
 }
 
-.benefits__list{
+.benefits__list {
   display: flex;
   gap: 72px 30px;
   align-items: flex-end;
   flex-wrap: wrap;
-  
+
 }
 
-.benefits__item{
+.benefits__item {
   flex: 1 1 255px;
 }
 
-li.benefits__item:last-child p{
+li.benefits__item:last-child p {
   max-width: 40ch;
 }
 
@@ -232,23 +294,43 @@ li.benefits__item:last-child p{
   align-items: center;
 }
 
-.benefits__item h3{
+.benefits__item h3 {
   max-width: 14ch;
   margin-top: 48px;
   margin-bottom: 24px;
 }
 
-.benefits__item h3 > span{
+.benefits__item h3>span {
   display: block;
- }
+}
 
- footer{
+@media (max-width:600px) {
+  .benefits__container{
+    margin-bottom: 96px;
+  }
+  .benefits__item {
+    text-align: center;
+  }
+
+  .benefits__item .benefits__icon {
+    margin: 0 auto;
+  }
+
+  .benefits__item h3 {
+    margin: 0 auto;
+    padding: 46px 0px 24px;
+  }
+
+}
+
+
+footer {
   padding: 0 20px;
   margin-bottom: 39px;
   text-align: center;
   font-weight: 700;
- }
+}
 
- footer p > span{
+footer p>span {
   font-weight: 500;
- }
+}

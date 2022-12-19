@@ -25,3 +25,9 @@
   background-color: var(--cor-p3);
   color: var(--cor-1);
 }
+
+@media (max-width: 650px) {
+  .btn-1,.btn-2{
+    padding: 11px 14px;
+  }
+}
