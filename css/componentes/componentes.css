@@ -1,13 +1,11 @@
 .btn-1{
- 
   padding: 16px 27px 16px 26px;
   color: var(--cor-1);
   font-weight: 700;
   border-radius: 8px;
   background-color: var(--cor-p1);
   transition: all .3s;
-  
-}
+  }
 
 .btn-1:hover{
   background-color: var(--cor-p2);

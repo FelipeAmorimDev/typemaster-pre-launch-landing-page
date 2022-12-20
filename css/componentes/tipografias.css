@@ -42,3 +42,12 @@
     font-size: 3rem;
   }
 }
+
+@media(max-width:600px){
+  .font-1-ll {
+    font-family: 'Barlow';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.444;
+  }
+}
